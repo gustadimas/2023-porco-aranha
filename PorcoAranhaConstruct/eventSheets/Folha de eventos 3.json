@@ -1,0 +1,198 @@
+{
+	"name": "Folha de eventos 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 225038069662714,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Jogador",
+					"sid": 224892303749675,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Jogador2",
+					"sid": 172215799004327,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 687093586390450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 385704455467991,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Jogador",
+					"sid": 468039574294905,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Jogador2",
+					"sid": 834436713169214,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 555540802942814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "ADM",
+					"sid": 723672726385992,
+					"parameters": {
+						"instance-variable": "COLORBLIND"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 320892274171495,
+					"parameters": {
+						"layer": "1",
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 312407808284147
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 220683031584406
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 955978507004416,
+					"parameters": {
+						"layer": "1",
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 248321223558960
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 667549502816130
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Sprite4",
+					"sid": 707203396604621,
+					"parameters": {
+						"distance": "ADM.COLUMBINE"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Sprite7",
+					"sid": 447181636293362,
+					"parameters": {
+						"distance": "ADM.COLUMBINE"
+					}
+				}
+			],
+			"sid": 121399731669278
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Sprite4",
+					"sid": 317498921165531,
+					"parameters": {
+						"comparison": 5,
+						"x-co-ordinate": "720"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ADM",
+					"sid": 130166510559122,
+					"parameters": {
+						"instance-variable": "COLUMBINE",
+						"value": "-4"
+					}
+				}
+			],
+			"sid": 963125167124672
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Sprite4",
+					"sid": 144049973378666,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ADM",
+					"sid": 217081954480099,
+					"parameters": {
+						"instance-variable": "COLUMBINE",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 564405151711189
+		}
+	],
+	"sid": 301111772203138
+}

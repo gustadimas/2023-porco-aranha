@@ -1,0 +1,72 @@
+{
+	"name": "Jogador",
+	"plugin-id": "Sprite",
+	"sid": 476302508540697,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Plataforma",
+			"sid": 683793471582264
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "CentrarEm",
+			"sid": 905499423136236
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 262,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8390802,
+						"collisionPoly": {
+							"points": [
+								0.6335877862595419,
+								0,
+								0.8282442748091603,
+								0.03614457831325301,
+								1,
+								0.6325301204819277,
+								0.9809160305343512,
+								0.7289156626506024,
+								0.7366412213740458,
+								0.9518072289156626,
+								0.5916030534351145,
+								0.9939759036144579,
+								0.20229007633587787,
+								0.963855421686747,
+								0.16793893129770993,
+								0.9036144578313253,
+								0,
+								0.18674698795180722,
+								0.003816793893129771,
+								0.1144578313253012
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 780720777875038,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,109 @@
+{
+	"name": "Folha de eventos 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 143569290800156,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BACK"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 164078349685931,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 541828099136310
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 777519139197301,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "COLORBLIND"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "ADM",
+					"sid": 985361153645650,
+					"parameters": {
+						"instance-variable": "COLORBLIND"
+					}
+				}
+			],
+			"sid": 589328540393867
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "ADM",
+					"sid": 445581567405320,
+					"parameters": {
+						"instance-variable": "COLORBLIND"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 865387249496051,
+					"parameters": {
+						"layer": "1",
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 973821010564360
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "ADM",
+					"sid": 194085959551506,
+					"parameters": {
+						"instance-variable": "COLORBLIND"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 938094460684413,
+					"parameters": {
+						"layer": "1",
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 495319946322508
+		}
+	],
+	"sid": 967700361849392
+}

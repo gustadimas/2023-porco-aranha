@@ -1,0 +1,109 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 320496919078261,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "START"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 195539336901745,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 264444289557203
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 715202324198123,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "OPTIONS"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 983753901604190,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 315354242665735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "ADM",
+					"sid": 260253495187118,
+					"parameters": {
+						"instance-variable": "COLORBLIND"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 139952514602153,
+					"parameters": {
+						"layer": "1",
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 703047788780382
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "ADM",
+					"sid": 173510270736905,
+					"parameters": {
+						"instance-variable": "COLORBLIND"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 710776192603862,
+					"parameters": {
+						"layer": "1",
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 387854674371811
+		}
+	],
+	"sid": 168141891227197
+}
